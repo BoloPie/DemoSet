@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#3F51B5</color><!--对应ActionBar颜色 该颜色应该在所有屏幕和组件中使用最广泛。-->
+    <color name="colorPrimaryDark">#303F9F</color><!-- 对应状态栏的颜色-->
+
+    <!-- 辅助颜色的调色板可以使用该颜色来指示相关动作或信息.
+    辅助颜色可以是原色的更暗或更浅的变化。-->
+    <color name="colorSecondary_100">#C5CAE9</color>
+    <color name="colorSecondary_700">#303F9F</color>
+
+    <!-- 对应EditText、RadioButton、CheckBox等选中时的颜色.
+   浮动操作按钮和交互式元素 -->
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccentAlternative">#F50057</color><!--备用强调色-->
+
+
+    <color name="textPrimary">#000000</color> <!-- 87%-->
+    <color name="textSecondary">#000000</color>  <!--54%-->
+    <color name="textDisabled_Hint">#000000</color> <!-- 38%-->
+
+</resources>
