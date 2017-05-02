@@ -1,20 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_recycler_view_linear"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.demoset.RecyclerViewLinearActivity">
 
+    <Button
+        android:id="@+id/activity_recycler_view_linear_add_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="增加一条" />
+
+    <Button
+        android:id="@+id/activity_recycler_view_linear_del_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="删除一条" />
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/activity_recycler_view_linear_recycler"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:scrollbars="vertical"
-        />
+        android:scrollbars="none" />
+    <!--.
+    android:scrollbarStyle可以定义滚动条的样式和位置，用于Listview、scrollview等滚动view，可选值有insideOverlay、insideInset、outsideOverlay、outsideInset四种。
+其中inside和outside分别表示是否在view的padding区域内，overlay和inset表示覆盖在view上或是插在view后面，所以四种值分别表示：
+insideOverlay：默认值，表示在padding区域内并且覆盖在view上
+insideInset：表示在padding区域内并且插入在view后面
+outsideOverlay：表示在padding区域外并且覆盖在view上
+outsideInset：表示在padding区域外并且插入在view后面-->
 
-</RelativeLayout>
+</LinearLayout>

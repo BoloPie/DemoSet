@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+<!-- 给头像添加一个描边 -->
+    <stroke android:color="@color/text_black_26" android:width="1px"/>
+    <solid android:color="@android:color/white" />
+
+</shape>

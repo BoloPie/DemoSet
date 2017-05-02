@@ -1,9 +1,95 @@
 <resources>
-    <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="nav_header_vertical_spacing">16dp</dimen>
     <dimen name="nav_header_height">160dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+
+
+    <!-- ————————————————————————MD间距 ———————————————————————————— -->
+    <!--横向间距-->
+    <dimen name="screen_edge_left_and_right_margin">16dp</dimen>
+    <dimen name="content_width_icon_left_margin">72dp</dimen>
+    <dimen name="horizontal_margin">16dp</dimen>
+    <dimen name="content_margin">72dp</dimen>
+    <dimen name="floating_button_margin">72dp</dimen>
+    <dimen name="navigation_right_margin">56dp</dimen>
+    <!--纵向间距-->
+    <!-- Status bar: 24dp
+     Toolbar: 56dp
+     Subtitle: 48dp
+     Title and list items: 72dp
+     Space between content areas: 8dp
+     List item: 72dp
+     Account menu and list items: 48dp
+    -->
+    <dimen name="status_bar_height">24dp</dimen>
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="subtitle_height">48dp</dimen>
+    <dimen name="title_height">72dp</dimen>
+    <dimen name="space_height">8dp</dimen>
+    <dimen name="list_item_large_height">72dp</dimen>
+    <dimen name="list_item_small_height">48dp</dimen>
+    <dimen name="menu_item_height">48dp</dimen>
+
+    <!--   图片 按钮大小-->
+    <!--Touch target size
+
+    Avatar: 40dp
+    Icon: 24dp
+    Touch target on both: 48dp
+
+
+    Touch target height: 48dp
+    Button height: 36dp
+
+
+
+Examples of flat buttons in dialogs
+
+Flat Button
+Height: 36dp
+Minimum width: 88dp
+Touch target height: 48dp
+Corner radius: 2dp
+Horizontal margin: 8dp
+Horizontal padding: 8dp
+
+-->
+    <dimen name="avatar_height">40dp</dimen>
+    <dimen name="avatar_padding">8dp</dimen>
+    <dimen name="icon_height">24dp</dimen>
+    <dimen name="touch_target_height">48dp</dimen>
+    <dimen name="button_height">36dp</dimen>
+    <dimen name="button_text_padding">16dp</dimen>
+    <dimen name="corner_radius">2dp</dimen>
+
+    <!--不同字体对应高度-->
+    <dimen name="text_45_height">63dp</dimen>
+    <dimen name="text_34_height">48dp</dimen>
+    <dimen name="text_24_height">34dp</dimen>
+    <dimen name="text_17_medium_height">30dp</dimen>
+    <dimen name="text_17_regular_height">26dp</dimen>
+    <dimen name="text_15_medium_height">26dp</dimen>
+    <dimen name="text_15_regular_height">23dp</dimen>
+
+
+    <!--字体大小-->
+    <!--display-->
+    <dimen name="text_size_112">112sp</dimen>
+    <dimen name="text_size_56">56sp</dimen>
+    <dimen name="text_size_45">45sp</dimen>
+    <dimen name="text_size_34">34sp</dimen>
+    <!-- headLine-->
+    <dimen name="text_size_24">24sp</dimen>
+    <!--title-->
+    <dimen name="text_size_21">21sp</dimen>
+    <!--subHeading-->
+    <dimen name="text_size_17">17sp</dimen>
+    <!--boday button-->
+    <dimen name="text_size_15">15sp</dimen>
+    <!--caption-->
+    <dimen name="text_size_13">13sp</dimen>
+
+
 </resources>

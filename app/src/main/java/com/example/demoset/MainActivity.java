@@ -9,6 +9,29 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.example.demoset.md.AppBarLayoutActivity;
+import com.example.demoset.md.CardViewActivity;
+import com.example.demoset.md.CollapsingToolbarLayoutActivity;
+import com.example.demoset.md.DeleteItemActivity;
+import com.example.demoset.md.FloatingActionButtonActivity;
+import com.example.demoset.md.ItemTouchHelperActivity;
+import com.example.demoset.md.LinearLayoutCompatActivity;
+import com.example.demoset.md.ListPopupWindowActivity;
+import com.example.demoset.md.NavigationDrawerActivity;
+import com.example.demoset.md.RecyclerViewLinearActivity;
+import com.example.demoset.md.SampleListPopupWindowActivity;
+import com.example.demoset.md.SwipyRefreshLayoutActivity;
+import com.example.demoset.md.TabLayoutActivity;
+import com.example.demoset.md.TextInputLayoutActivity;
+import com.example.demoset.md.ToolBarActivity;
+import com.example.demoset.md.ToolbarSearchActivity;
+import com.example.demoset.ui.ActionBarActivity;
+import com.example.demoset.ui.ExpandableListViewActivity;
+import com.example.demoset.ui.ProvinceActivity;
+import com.example.demoset.ui.SpannableStringActivity;
+import com.example.demoset.ui.SwipeDelMenuLayoutActivity;
+import com.squareup.leakcanary.RefWatcher;
+
 import java.util.ArrayList;
 
 import butterknife.Bind;
@@ -27,6 +50,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(MainActivity.this);
+//        RefWatcher refWatcher = BaseApplication.getRefWatcher(this);
+//        refWatcher.watch(this);
 
         intent = new Intent();
         list = new ArrayList<>();
@@ -34,6 +59,14 @@ public class MainActivity extends AppCompatActivity {
         listView.setAdapter(adapter);
 
         initData();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        ButterKnife.unbind(this);
+//        RefWatcher refWatcher = BaseApplication.getRefWatcher(this);
+//        refWatcher.watch(this);
     }
 
     private void initData() {
@@ -49,10 +82,16 @@ public class MainActivity extends AppCompatActivity {
         list.add("ToolBar");
         list.add("ToolbarSearch");
         list.add("CollapsingToolbarLayout");
-        list.add("TabLayout");
-        list.add("TabLayout");
-        list.add("TabLayout");
-        list.add("TabLayout");
+        list.add("SwipyRefreshLayout");
+        list.add("CardView");
+        list.add("SpannableString");
+        list.add("ActionBarActivity");
+        list.add("LinearLayoutCompatActivity");
+        list.add("ExpandableListViewActivity");
+        list.add("ProvinceActivity");
+        list.add("ItemTouchHelperActivity");
+        list.add("DeleteItemActivity");
+        list.add("SwipeDelMenuLayoutActivity");
 
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -61,31 +100,31 @@ public class MainActivity extends AppCompatActivity {
                 switch (i) {
                     case 0:
                         intent.setClass(MainActivity.this, TabLayoutActivity.class);
-                      
+
                         break;
                     case 1:
                         intent.setClass(MainActivity.this, FloatingActionButtonActivity.class);
-                      
+
                         break;
                     case 2:
                         intent.setClass(MainActivity.this, TextInputLayoutActivity.class);
-                      
+
                         break;
                     case 3:
                         intent.setClass(MainActivity.this, NavigationDrawerActivity.class);
-                      
+
                         break;
                     case 4:
                         intent.setClass(MainActivity.this, AppBarLayoutActivity.class);
-                      
+
                         break;
                     case 5:
                         intent.setClass(MainActivity.this, SampleListPopupWindowActivity.class);
-                      
+
                         break;
                     case 6:
                         intent.setClass(MainActivity.this, ListPopupWindowActivity.class);
-                      
+
                         break;
                     case 7:
                         AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
@@ -109,23 +148,48 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 11:
                         intent.setClass(MainActivity.this, CollapsingToolbarLayoutActivity.class);
+
                         break;
                     case 12:
+                        intent.setClass(MainActivity.this, SwipyRefreshLayoutActivity.class);
 
                         break;
                     case 13:
+                        intent.setClass(MainActivity.this, CardViewActivity.class);
 
                         break;
                     case 14:
+                        intent.setClass(MainActivity.this, SpannableStringActivity.class);
 
                         break;
                     case 15:
+                        intent.setClass(MainActivity.this, ActionBarActivity.class);
 
                         break;
                     case 16:
+                        intent.setClass(MainActivity.this, LinearLayoutCompatActivity.class);
+
 
                         break;
                     case 17:
+                        intent.setClass(MainActivity.this, ExpandableListViewActivity.class);
+
+                        break;
+
+                    case 18:
+                        intent.setClass(MainActivity.this, ProvinceActivity.class);
+
+                        break;
+                    case 19:
+                        intent.setClass(MainActivity.this, ItemTouchHelperActivity.class);
+
+                        break;
+                    case 20:
+                        intent.setClass(MainActivity.this, DeleteItemActivity.class);
+
+                        break;
+                    case 21:
+                        intent.setClass(MainActivity.this, SwipeDelMenuLayoutActivity.class);
 
                         break;
 

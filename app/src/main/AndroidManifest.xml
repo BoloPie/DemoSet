@@ -2,7 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.demoset">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
+        android:name=".BaseApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -15,26 +19,42 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TabLayoutActivity" />
-        <activity android:name=".FloatingActionButtonActivity" />
-        <activity android:name=".TextInputLayoutActivity" />
-        <activity android:name=".SampleListPopupWindowActivity" />
+        <activity android:name=".md.TabLayoutActivity" />
+        <activity android:name=".md.FloatingActionButtonActivity" />
+        <activity android:name=".md.TextInputLayoutActivity" />
+        <activity android:name=".md.SampleListPopupWindowActivity" />
         <activity
-            android:name=".NavigationDrawerActivity"
+            android:name=".md.NavigationDrawerActivity"
             android:label="@string/title_activity_navigation_drawer"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".AppBarLayoutActivity"
+            android:name=".md.AppBarLayoutActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ListPopupWindowActivity" />
-        <activity android:name=".RecyclerViewLinearActivity" />
+        <activity android:name=".md.ListPopupWindowActivity" />
+        <activity android:name=".md.RecyclerViewLinearActivity" />
         <activity
-            android:name=".ToolBarActivity"
+            android:name=".md.ToolBarActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ToolbarSearchActivity"
+            android:name=".md.ToolbarSearchActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".CollapsingToolbarLayoutActivity"></activity>
+        <activity android:name=".md.CollapsingToolbarLayoutActivity" />
+        <activity android:name=".md.SwipyRefreshLayoutActivity" />
+        <activity android:name=".md.CardViewActivity" />
+        <activity android:name=".ui.SpannableStringActivity" />
+        <activity android:name=".ui.TabHostActivity" />
+        <activity android:name=".ui.ActionBarActivity" />
+        <activity android:name=".md.LinearLayoutCompatActivity" />
+        <activity android:name=".ui.ExpandableListViewActivity" />
+        <activity android:name=".ui.CapturePictureActivity" />
+        <activity android:name=".ui.FragmentActivity" />
+        <activity android:name=".ui.ProvinceActivity" />
+        <activity android:name=".md.ItemTouchHelperActivity" />
+        <activity android:name=".md.DeleteItemActivity" />
+        <activity android:name=".ui.SwipeDelMenuLayoutActivity" />
+        <activity android:name=".BaseActivity"></activity>
+
+        <service android:name="com.example.demoset.service.LeakUploadService" />
     </application>
 
 </manifest>

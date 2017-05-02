@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.example.demoset.PopListBean;
+import com.example.demoset.bean.PopListBean;
 import com.example.demoset.R;
 
 import java.util.ArrayList;

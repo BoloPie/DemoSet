@@ -15,10 +15,13 @@ import java.util.ArrayList;
  */
 
 
-public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
-    ArrayList<String> datas;
+public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>
+        implements View.OnClickListener {
 
-    public RecyclerViewAdapter(ArrayList<String> datas) {
+    private ArrayList<DataModel> datas;
+    private OnRecyclerViewItemClickListener mOnItemClickListener = null;
+
+    public RecyclerViewAdapter(ArrayList<DataModel> datas) {
         this.datas = datas;
     }
 
@@ -27,19 +30,40 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public ViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType) {
         View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.list_item_recycler_liner, viewGroup, false);
         ViewHolder vh = new ViewHolder(view);
+        //将创建的View注册点击事件
+        view.setOnClickListener(this);
         return vh;
     }
 
     //将数据与界面进行绑定的操作
     @Override
     public void onBindViewHolder(ViewHolder viewHolder, int position) {
-        viewHolder.mTextView.setText(datas.get(position));
+        viewHolder.mTextView.setText(datas.get(position).getName());
     }
 
     //获取数据的数量
     @Override
     public int getItemCount() {
         return datas.size();
+    }
+
+    @Override
+    public void onClick(View view) {
+        if (mOnItemClickListener != null) {
+            //注意这里使用getTag方法获取数据
+            mOnItemClickListener.onItemClick(view, (DataModel) view.getTag());
+        }
+    }
+
+    public void addItem(DataModel content, int position) {
+        datas.add(position, content);
+        notifyItemInserted(position); //Attention!
+    }
+
+    public void removeItem(DataModel model) {
+        int position = datas.indexOf(model);
+        datas.remove(position);
+        notifyItemRemoved(position);//Attention!
     }
 
     //自定义的ViewHolder，持有每个Item的的所有界面元素
@@ -49,6 +73,28 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         public ViewHolder(View view) {
             super(view);
             mTextView = (TextView) view.findViewById(R.id.list_item_recycler_liner_tv);
+        }
+    }
+
+
+    public void setOnItemClickListener(OnRecyclerViewItemClickListener listener) {
+        this.mOnItemClickListener = listener;
+    }
+
+    public static interface OnRecyclerViewItemClickListener {
+        void onItemClick(View view, DataModel data);
+    }
+
+    public static class DataModel {
+
+        private String name = "";
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
         }
     }
 }

@@ -19,4 +19,36 @@
     <color name="textSecondary">#000000</color>  <!--54%-->
     <color name="textDisabled_Hint">#000000</color> <!-- 38%-->
 
+    <color name="white">#FFFFFF</color>
+
+    <!--MD 字体颜色-->
+    <!--87% — D4  普通文字 -->
+    <color name="text_black_87">#D4000000</color>
+    <!--54% — 8A  减淡文字 -->
+    <color name="text_black_54">#8A000000</color>
+    <!--26% — 42  禁用状态/提示文字  -->
+    <color name="text_black_26">#42000000</color>
+    <!--12% — 1E  分隔线-->
+    <color name="text_black_12">#1E000000</color>
+
+    <!--100% —FF-->
+    <color name="text_white_100">#FFFFFFFF</color>
+    <!--70% — B3-->
+    <color name="text_white_70">#B3FFFFFF</color>
+    <!--30% — 4D-->
+    <color name="text_white_30">#4DFFFFFF</color>
+    <!--12% — 1E-->
+    <color name="text_white_12">#1EFFFFFF</color>
+
+
+    <!-- 颜色red-->
+    <color name="color_red_500">#F44336</color>
+    <color name="color_red_A700">#D50000</color>
+    <!-- blue-->
+    <color name="color_blue_A700">#2962FF</color>
+    <!--light blue-->
+    <color name="color_light_blue_500">#03A9F4</color>
+    <!-- gray-->
+    <color name="color_gray_600">#757575</color>
+
 </resources>

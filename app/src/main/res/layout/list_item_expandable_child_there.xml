@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_large_height">
+
+    <ImageView
+        android:id="@+id/list_item_expandable_child_there_head_iv"
+        android:layout_width="@dimen/avatar_height"
+        android:layout_height="@dimen/avatar_height"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="@dimen/horizontal_margin"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/shape_gray_avatar_bg"
+        android:padding="1px"
+        android:src="@mipmap/ic_head_default" />
+
+    <TextView
+        android:id="@+id/list_item_expandable_child_there_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/list_item_expandable_child_there_head_iv"
+        android:layout_marginLeft="@dimen/content_margin"
+        android:text="child"
+        android:textColor="@color/text_black_54"
+        android:textSize="@dimen/text_size_15" />
+
+    <TextView
+        android:id="@+id/list_item_expandable_child_there_state_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/list_item_expandable_child_there_head_iv"
+        android:layout_below="@+id/list_item_expandable_child_there_name_tv"
+        android:layout_marginLeft="@dimen/content_margin"
+        android:text="[在线]"
+        android:textColor="@color/color_light_blue_500"
+        android:textSize="@dimen/text_size_13" />
+
+    <TextView
+        android:id="@+id/list_item_expandable_child_there_tel_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/list_item_expandable_child_there_head_iv"
+        android:layout_below="@+id/list_item_expandable_child_there_name_tv"
+        android:layout_marginLeft="@dimen/space_height"
+        android:layout_toRightOf="@id/list_item_expandable_child_there_state_tv"
+        android:text="188 6666 8888"
+        android:textColor="@color/text_black_26"
+        android:textSize="@dimen/text_size_13" />
+
+    <TextView
+        android:id="@+id/list_item_expandable_child_there_out_coo_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/icon_height"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/space_height"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/shape_corner_solid_blue"
+        android:gravity="center"
+        android:paddingLeft="@dimen/space_height"
+        android:paddingRight="@dimen/space_height"
+        android:text="移出公司"
+        android:textColor="@color/text_white_100"
+        android:textSize="@dimen/text_size_13" />
+
+
+</RelativeLayout>
