@@ -67,7 +67,10 @@
         <activity
             android:name=".ui.DynamicFragmentActivity"
             android:label="动态嵌入fragment-最常用最基础" />
-        <activity android:name=".md.SwipeEmpityViewActivity"></activity>
+        <activity android:name=".md.SwipeEmpityViewActivity"
+            android:label="listview空数据占位"/>
+        <activity android:name=".ui.StickyScrollActivity"
+            android:label="顶部悬浮"/>
     </application>
 
 </manifest>

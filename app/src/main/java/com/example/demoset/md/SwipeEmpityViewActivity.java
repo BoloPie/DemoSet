@@ -22,8 +22,7 @@ public class SwipeEmpityViewActivity extends AppCompatActivity {
 
     @Bind(R.id.listview)
     EmpityListView listView;
-//    @Bind(R.id.parent)
-//    FrameLayout frameLayout;
+
 
     @Bind(R.id.swipe_container)
     SwipyRefreshLayout swipyRefreshLayout;
@@ -42,7 +41,7 @@ public class SwipeEmpityViewActivity extends AppCompatActivity {
         list = new ArrayList<>();
         adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, list);
         listView.setAdapter(adapter);
-//        listView.setVisibility(View.VISIBLE);
+        listView.setVisibility(View.VISIBLE);
         listView.setEmptyView(findViewById(android.R.id.empty));
         swipyRefreshLayout.setOnRefreshListener(new SwipyRefreshLayout.OnRefreshListener() {
             @Override

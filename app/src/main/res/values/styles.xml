@@ -17,6 +17,35 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <!-- 顶部悬浮-->
+    <style name="Item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">300dp</item>
+    </style>
+
+    <style name="Item.Top">
+        <item name="android:background">@color/color_red_500</item>
+    </style>
+
+    <style name="Item.Sticky">
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">?android:textAppearanceLarge</item>
+        <item name="android:textAllCaps">true</item>
+       <!-- <item name="android:fontFamily">sans-serif-light</item>-->
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="Item.Bottom">
+        <item name="android:background">@color/color_red_300</item>
+    </style>
+
+    <style name="Item.Bottom.Alt">
+        <item name="android:background">@color/color_red_100</item>
+    </style>
 
 
 </resources>

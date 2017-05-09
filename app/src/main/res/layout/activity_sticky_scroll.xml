@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.demoset.view.ObservableScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sticky_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.demoset.ui.StickyScrollActivity">
+
+    <!--注意我们里面一定要用FrameLayout-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View android:id="@+id/top"
+                style="@style/Item.Top" />
+
+            <View android:id="@+id/placeholder"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/colorAccent"/>
+
+            <View style="@style/Item.Bottom" />
+            <View style="@style/Item.Bottom.Alt" />
+
+
+        </LinearLayout>
+
+        <TextView android:id="@+id/sticky" style="@style/Item.Sticky"
+            android:text="xuanfu"
+            android:onClick="go"/>
+
+    </FrameLayout>
+
+</com.example.demoset.view.ObservableScrollView>

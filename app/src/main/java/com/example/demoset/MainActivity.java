@@ -33,6 +33,7 @@ import com.example.demoset.ui.FragmentViewPagerActivity;
 import com.example.demoset.ui.HoverActivity;
 import com.example.demoset.ui.ProvinceActivity;
 import com.example.demoset.ui.SpannableStringActivity;
+import com.example.demoset.ui.StickyScrollActivity;
 import com.example.demoset.ui.SwipeDelMenuLayoutActivity;
 import com.squareup.leakcanary.RefWatcher;
 
@@ -100,6 +101,7 @@ public class MainActivity extends AppCompatActivity {
         list.add("DynamicFragmentActivity");
         list.add("FragmentViewPagerActivity");
         list.add("SwipeEmpityViewActivity");
+        list.add("StickyScrollActivity");
 
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -188,6 +190,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 25:
                         intent.setClass(MainActivity.this, SwipeEmpityViewActivity.class);
+                        break;
+                    case 26:
+                        intent.setClass(MainActivity.this, StickyScrollActivity.class);
                         break;
 
 

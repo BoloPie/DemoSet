@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.demoset.R;
+import com.example.demoset.helper.ItemTouchHelperAdapter;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -14,7 +15,6 @@ import java.util.Collections;
 /**
  * Created by 张凌云 on 2017/4/27.
  */
-
 public class NormalAdapter extends RecyclerView.Adapter<NormalAdapter.ViewHolder> implements ItemTouchHelperAdapter {
 
 
