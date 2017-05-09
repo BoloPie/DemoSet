@@ -20,13 +20,17 @@ import com.example.demoset.md.ListPopupWindowActivity;
 import com.example.demoset.md.NavigationDrawerActivity;
 import com.example.demoset.md.RecyclerViewLinearActivity;
 import com.example.demoset.md.SampleListPopupWindowActivity;
+import com.example.demoset.md.SwipeEmpityViewActivity;
 import com.example.demoset.md.SwipyRefreshLayoutActivity;
 import com.example.demoset.md.TabLayoutActivity;
 import com.example.demoset.md.TextInputLayoutActivity;
 import com.example.demoset.md.ToolBarActivity;
 import com.example.demoset.md.ToolbarSearchActivity;
 import com.example.demoset.ui.ActionBarActivity;
+import com.example.demoset.ui.DynamicFragmentActivity;
 import com.example.demoset.ui.ExpandableListViewActivity;
+import com.example.demoset.ui.FragmentViewPagerActivity;
+import com.example.demoset.ui.HoverActivity;
 import com.example.demoset.ui.ProvinceActivity;
 import com.example.demoset.ui.SpannableStringActivity;
 import com.example.demoset.ui.SwipeDelMenuLayoutActivity;
@@ -92,6 +96,10 @@ public class MainActivity extends AppCompatActivity {
         list.add("ItemTouchHelperActivity");
         list.add("DeleteItemActivity");
         list.add("SwipeDelMenuLayoutActivity");
+        list.add("HoverActivity");
+        list.add("DynamicFragmentActivity");
+        list.add("FragmentViewPagerActivity");
+        list.add("SwipeEmpityViewActivity");
 
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -100,31 +108,24 @@ public class MainActivity extends AppCompatActivity {
                 switch (i) {
                     case 0:
                         intent.setClass(MainActivity.this, TabLayoutActivity.class);
-
                         break;
                     case 1:
                         intent.setClass(MainActivity.this, FloatingActionButtonActivity.class);
-
                         break;
                     case 2:
                         intent.setClass(MainActivity.this, TextInputLayoutActivity.class);
-
                         break;
                     case 3:
                         intent.setClass(MainActivity.this, NavigationDrawerActivity.class);
-
                         break;
                     case 4:
                         intent.setClass(MainActivity.this, AppBarLayoutActivity.class);
-
                         break;
                     case 5:
                         intent.setClass(MainActivity.this, SampleListPopupWindowActivity.class);
-
                         break;
                     case 6:
                         intent.setClass(MainActivity.this, ListPopupWindowActivity.class);
-
                         break;
                     case 7:
                         AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
@@ -136,61 +137,57 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 8:
                         intent.setClass(MainActivity.this, RecyclerViewLinearActivity.class);
-                      
                         break;
                     case 9:
                         intent.setClass(MainActivity.this, ToolBarActivity.class);
-                      
                         break;
                     case 10:
                         intent.setClass(MainActivity.this, ToolbarSearchActivity.class);
-                      
                         break;
                     case 11:
                         intent.setClass(MainActivity.this, CollapsingToolbarLayoutActivity.class);
-
                         break;
                     case 12:
                         intent.setClass(MainActivity.this, SwipyRefreshLayoutActivity.class);
-
                         break;
                     case 13:
                         intent.setClass(MainActivity.this, CardViewActivity.class);
-
                         break;
                     case 14:
                         intent.setClass(MainActivity.this, SpannableStringActivity.class);
-
                         break;
                     case 15:
                         intent.setClass(MainActivity.this, ActionBarActivity.class);
-
                         break;
                     case 16:
                         intent.setClass(MainActivity.this, LinearLayoutCompatActivity.class);
-
-
                         break;
                     case 17:
                         intent.setClass(MainActivity.this, ExpandableListViewActivity.class);
-
                         break;
-
                     case 18:
                         intent.setClass(MainActivity.this, ProvinceActivity.class);
-
                         break;
                     case 19:
                         intent.setClass(MainActivity.this, ItemTouchHelperActivity.class);
-
                         break;
                     case 20:
                         intent.setClass(MainActivity.this, DeleteItemActivity.class);
-
                         break;
                     case 21:
                         intent.setClass(MainActivity.this, SwipeDelMenuLayoutActivity.class);
-
+                        break;
+                    case 22:
+                        intent.setClass(MainActivity.this, HoverActivity.class);
+                        break;
+                    case 23:
+                        intent.setClass(MainActivity.this, DynamicFragmentActivity.class);
+                        break;
+                    case 24:
+                        intent.setClass(MainActivity.this, FragmentViewPagerActivity.class);
+                        break;
+                    case 25:
+                        intent.setClass(MainActivity.this, SwipeEmpityViewActivity.class);
                         break;
 
 

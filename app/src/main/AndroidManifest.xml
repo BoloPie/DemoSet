@@ -38,7 +38,9 @@
         <activity
             android:name=".md.ToolbarSearchActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".md.CollapsingToolbarLayoutActivity" />
+        <activity
+            android:name=".md.CollapsingToolbarLayoutActivity"
+            android:label="悬浮" />
         <activity android:name=".md.SwipyRefreshLayoutActivity" />
         <activity android:name=".md.CardViewActivity" />
         <activity android:name=".ui.SpannableStringActivity" />
@@ -52,9 +54,20 @@
         <activity android:name=".md.ItemTouchHelperActivity" />
         <activity android:name=".md.DeleteItemActivity" />
         <activity android:name=".ui.SwipeDelMenuLayoutActivity" />
-        <activity android:name=".BaseActivity"></activity>
+        <activity android:name=".BaseActivity" />
 
-        <service android:name="com.example.demoset.service.LeakUploadService" />
+        <service android:name=".service.LeakUploadService" />
+
+        <activity
+            android:name=".ui.HoverActivity"
+            android:label="悬浮-scrollview" />
+        <activity
+            android:name=".ui.FragmentViewPagerActivity"
+            android:label="fragment +viewpager 实现" />
+        <activity
+            android:name=".ui.DynamicFragmentActivity"
+            android:label="动态嵌入fragment-最常用最基础" />
+        <activity android:name=".md.SwipeEmpityViewActivity"></activity>
     </application>
 
 </manifest>

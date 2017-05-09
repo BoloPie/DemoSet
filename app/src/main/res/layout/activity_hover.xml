@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_hover"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.demoset.ui.HoverActivity">
+
+    <com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout
+        android:id="@+id/activity_hover_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srl_direction="both">
+
+        <com.example.demoset.view.HoverScrollView
+            android:id="@+id/myScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/activity_hover_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="blocksDescendants"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/activity_hover_top_hide_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/activity_hover_top_hide_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:gravity="center"
+                        android:text="我是隐藏部分" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/activity_hover_stop_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/activity_hover_stop_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@android:color/darker_gray"
+                        android:gravity="center"
+                        android:text="我是悬停部分"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+
+                <com.example.demoset.view.NoScrollListView
+                    android:id="@+id/activity_hover_lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </com.example.demoset.view.HoverScrollView>
+
+    </com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_hover_top_lay"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical">
+        <!-- 这个是顶部悬停部分-->
+    </LinearLayout>
+</RelativeLayout>

@@ -1,56 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/coordinatorLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true">
+    android:orientation="vertical">
 
-    <android.support.design.widget.AppBarLayout
-        android:id="@+id/appBarLayout"
-        android:layout_width="match_parent"
-        android:layout_height="250dp">
+    <!--<com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout
+        android:id="@+id/activity_app_bar_layout_more_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srl_direction="both">-->
 
-        <android.support.design.widget.CollapsingToolbarLayout
+        <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/coordinatorLayout"
             android:layout_width="match_parent"
-            android:layout_height="220dp"
-            app:contentScrim="#000000"
-            app:layout_scrollFlags="scroll">
-            <!--scroll|exitUntilCollapsed|snap-->
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true">
 
-            <TextView
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/appBarLayout"
                 android:layout_width="match_parent"
-                android:layout_height="220dp"
-                android:background="#987545"
-                android:gravity="center"
-                android:text="banner区域"
-                android:textColor="#ffffff" />
+                android:layout_height="250dp">
 
-        </android.support.design.widget.CollapsingToolbarLayout>
+                <android.support.design.widget.CollapsingToolbarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    app:contentScrim="#000000"
+                    app:layout_scrollFlags="scroll">
+                    <!--scroll|exitUntilCollapsed|snap-->
 
-        <TextView
-            android:id="@+id/activity_app_bar_layout_more_suspend_tv"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:gravity="center"
-            android:text="点击实现悬浮" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:background="#987545"
+                        android:gravity="center"
+                        android:text="banner区域"
+                        android:textColor="#ffffff" />
 
-    </android.support.design.widget.AppBarLayout>
+                </android.support.design.widget.CollapsingToolbarLayout>
 
-    <android.support.v4.widget.NestedScrollView
-        android:id="@+id/nestedScrollView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+                <TextView
+                    android:id="@+id/activity_app_bar_layout_more_suspend_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="点击实现悬浮" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/horizontal_margin"
-            android:textSize="@dimen/text_size_15"
-            android:text="@string/text" />
+            </android.support.design.widget.AppBarLayout>
 
-    </android.support.v4.widget.NestedScrollView>
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/nestedScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-</android.support.design.widget.CoordinatorLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/horizontal_margin"
+                    android:text="@string/text"
+                    android:textSize="@dimen/text_size_15" />
+
+            </android.support.v4.widget.NestedScrollView>
+
+        </android.support.design.widget.CoordinatorLayout>
+   <!-- </com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout>-->
+</LinearLayout>

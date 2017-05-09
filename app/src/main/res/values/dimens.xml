@@ -92,4 +92,7 @@ Horizontal padding: 8dp
     <dimen name="text_size_13">13sp</dimen>
 
 
+    <!-- 功能性-->
+    <dimen name="hover_tv">100dp</dimen>
+
 </resources>
