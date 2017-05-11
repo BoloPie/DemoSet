@@ -31,10 +31,13 @@ import com.example.demoset.ui.DynamicFragmentActivity;
 import com.example.demoset.ui.ExpandableListViewActivity;
 import com.example.demoset.ui.FragmentViewPagerActivity;
 import com.example.demoset.ui.HoverActivity;
+import com.example.demoset.ui.LoginActivity;
 import com.example.demoset.ui.ProvinceActivity;
+import com.example.demoset.ui.QRActivity;
 import com.example.demoset.ui.SpannableStringActivity;
 import com.example.demoset.ui.StickyScrollActivity;
 import com.example.demoset.ui.SwipeDelMenuLayoutActivity;
+import com.example.demoset.ui.TakePhotoActivity;
 import com.squareup.leakcanary.RefWatcher;
 
 import java.util.ArrayList;
@@ -102,6 +105,9 @@ public class MainActivity extends AppCompatActivity {
         list.add("FragmentViewPagerActivity");
         list.add("SwipeEmpityViewActivity");
         list.add("StickyScrollActivity");
+        list.add("QRActivity");
+        list.add("LoginActivity");
+        list.add("TakePhotoActivity");
 
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -194,6 +200,16 @@ public class MainActivity extends AppCompatActivity {
                     case 26:
                         intent.setClass(MainActivity.this, StickyScrollActivity.class);
                         break;
+                    case 27:
+                        intent.setClass(MainActivity.this, QRActivity.class);
+                        break;
+                    case 28:
+                        intent.setClass(MainActivity.this, LoginActivity.class);
+                        break;
+                    case 29:
+                        intent.setClass(MainActivity.this, TakePhotoActivity.class);
+                        break;
+
 
 
 

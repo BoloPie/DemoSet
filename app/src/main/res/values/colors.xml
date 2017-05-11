@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="colorPrimary">#3F51B5</color><!--对应ActionBar颜色 该颜色应该在所有屏幕和组件中使用最广泛。-->
+    <color name="colorPrimary">#212121</color><!--对应ActionBar颜色 该颜色应该在所有屏幕和组件中使用最广泛。-->
     <color name="colorPrimaryDark">#303F9F</color><!-- 对应状态栏的颜色-->
 
     <!-- 辅助颜色的调色板可以使用该颜色来指示相关动作或信息.
@@ -11,7 +11,7 @@
 
     <!-- 对应EditText、RadioButton、CheckBox等选中时的颜色.
    浮动操作按钮和交互式元素 -->
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#00BFA5</color>
     <color name="colorAccentAlternative">#F50057</color><!--备用强调色-->
 
 
@@ -42,15 +42,68 @@
 
 
     <!-- 颜色red-->
+    <color name="color_red_50">#FFEBEE</color>
     <color name="color_red_100">#FFCDD2</color>
+    <color name="color_red_200">#EF9A9A</color>
     <color name="color_red_300">#E57373</color>
+    <color name="color_red_400">#EF5350</color>
     <color name="color_red_500">#F44336</color>
+    <color name="color_red_600">#E53935</color>
+    <color name="color_red_700">#D32F2F</color>
+    <color name="color_red_800">#C62828</color>
+    <color name="color_red_900">#B71C1C</color>
+    <color name="color_red_A100">#FF8A80</color>
+    <color name="color_red_A200">#FF5252</color>
+    <color name="color_red_A400">#FF1744</color>
     <color name="color_red_A700">#D50000</color>
     <!-- blue-->
     <color name="color_blue_A700">#2962FF</color>
     <!--light blue-->
     <color name="color_light_blue_500">#03A9F4</color>
     <!-- gray-->
+    <color name="color_gray_50">#FAFAFA</color>
+    <color name="color_gray_100">#F5F5F5</color>
+    <color name="color_gray_200">#EEEEEE</color>
+    <color name="color_gray_300">#E0E0E0</color>
+    <color name="color_gray_400">#BDBDBD</color>
+    <color name="color_gray_500">#9E9E9E</color>
     <color name="color_gray_600">#757575</color>
+    <color name="color_gray_700">#616161</color>
+    <color name="color_gray_800">#424242</color>
+    <color name="color_gray_900">#212121</color>
+
+<!--indigo-->
+    <color name="color_indigo_50">#E8EAF6</color>
+    <color name="color_indigo_100">#C5CAE9</color>
+    <color name="color_indigo_200">#9FA8DA</color>
+    <color name="color_indigo_300">#7986CB</color>
+    <color name="color_indigo_400">#5C6BC0</color>
+    <color name="color_indigo_500">#3F51B5</color>
+    <color name="color_indigo_600">#3949AB</color>
+    <color name="color_indigo_700">#303F9F</color>
+    <color name="color_indigo_800">#283593</color>
+    <color name="color_indigo_900">#1A237E</color>
+    <color name="color_indigo_A100">#8C9EFF</color>
+    <color name="color_indigo_A200">#536DFE</color>
+    <color name="color_indigo_A400">#3D5AFE</color>
+    <color name="color_indigo_A700">#304FFE</color>
+
+<!--teal-->
+    <color name="color_teal_50">#E0F2F1</color>
+    <color name="color_teal_100">#B2DFDB</color>
+    <color name="color_teal_200">#80CBC4</color>
+    <color name="color_teal_300">#4DB6AC</color>
+    <color name="color_teal_400">#26A69A</color>
+    <color name="color_teal_500">#009688</color>
+    <color name="color_teal_600">#00897B</color>
+    <color name="color_teal_700">#00796B</color>
+    <color name="color_teal_800">#00695C</color>
+    <color name="color_teal_900">#004D40</color>
+    <color name="color_teal_A100">#A7FFEB</color>
+    <color name="color_teal_A200">#64FFDA</color>
+    <color name="color_teal_A400">#1DE9B6</color>
+    <color name="color_teal_A700">#00BFA5</color>
+
+
 
 </resources>

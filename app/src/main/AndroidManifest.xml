@@ -5,6 +5,13 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+
+
     <application
         android:name=".BaseApplication"
         android:allowBackup="true"
@@ -67,10 +74,21 @@
         <activity
             android:name=".ui.DynamicFragmentActivity"
             android:label="动态嵌入fragment-最常用最基础" />
-        <activity android:name=".md.SwipeEmpityViewActivity"
-            android:label="listview空数据占位"/>
-        <activity android:name=".ui.StickyScrollActivity"
-            android:label="顶部悬浮"/>
+        <activity
+            android:name=".md.SwipeEmpityViewActivity"
+            android:label="listview空数据占位" />
+        <activity
+            android:name=".ui.StickyScrollActivity"
+            android:label="顶部悬浮_sticky-美团" />
+        <activity android:name=".ui.RegisterActivity" />
+        <activity
+            android:name=".ui.QRActivity"
+            android:label="二维码生成" />
+        <activity
+            android:name=".ui.LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity android:name=".ui.TakePhotoActivity"
+            android:label="选择照片"/>
     </application>
 
 </manifest>

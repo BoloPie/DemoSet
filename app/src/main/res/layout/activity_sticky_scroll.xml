@@ -24,7 +24,7 @@
                 android:background="@color/colorAccent"/>
 
             <View style="@style/Item.Bottom" />
-            <View style="@style/Item.Bottom.Alt" />
+           <!-- <View style="@style/Item.Bottom.Alt" />-->
 
 
         </LinearLayout>

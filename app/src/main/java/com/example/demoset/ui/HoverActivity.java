@@ -2,6 +2,7 @@ package com.example.demoset.ui;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -16,7 +17,7 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 /**
- * 悬停--成功
+ * 悬停--悬停后滑动不下来
  */
 public class HoverActivity extends AppCompatActivity implements HoverScrollView.OnScrollListener {
 
@@ -96,6 +97,7 @@ public class HoverActivity extends AppCompatActivity implements HoverScrollView.
                 topLay.addView(stopTv);
             }
         } else {
+            hideLay.setVisibility(View.VISIBLE);
             if (stopTv.getParent() != stopLay) {
                 topLay.removeView(stopTv);
                 stopLay.addView(stopTv);
@@ -106,6 +108,7 @@ public class HoverActivity extends AppCompatActivity implements HoverScrollView.
     @OnClick(R.id.activity_hover_stop_lay)
     void goHover(){
 //        滚动到指定位置
-        mHsv.scrollTo(0,hideLay.getBottom());
+//        mHsv.scrollTo(0,hideLay.getBottom());
+        hideLay.setVisibility(View.GONE);
     }
 }

@@ -24,4 +24,19 @@
 　　5很大很大的花蕾，小王子感觉到从这个花苞中一定会出现一个奇迹。然而这朵花藏在它那绿茵茵的房间中用了很长的时间来打扮自己。她精心选择着她将来的颜色，慢慢腾腾地妆饰着，一片片地搭配着她的花瓣，她不愿象虞美人那样一出世就满脸皱纹。她要让自己带着光艳夺目的丽姿来到世间。是的，她是非常爱俏的。她用好些好些日子天仙般地梳妆打扮。然后，在一天的早晨，恰好在太阳升起的时候，她开放了。她已经精细地做了那么长的准备工作，却打着哈欠说道：
 　　“我刚刚睡醒，真对不起，瞧我的头发还是乱蓬蓬的…”
 　　——《小王子》"</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">请输入手机号</string>
+    <string name="prompt_password">请输入密码</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_phone">This phone is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+
+
 </resources>

@@ -42,6 +42,7 @@ public class StickyScrollActivity extends AppCompatActivity implements Observabl
             @Override
             public void onClick(View view) {
                 topView.setVisibility(View.GONE);
+
             }
         });
     }

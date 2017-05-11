@@ -65,7 +65,7 @@ public class BitmapUtils {
      * @param context
      * @return 图片的uri
      */
-    private static Uri createImagePathUri(Context context) {
+    public static Uri createImagePathUri(Context context) {
         Uri imageFilePath = null;
         String status = Environment.getExternalStorageState();
         SimpleDateFormat timeFormatter = new SimpleDateFormat(
