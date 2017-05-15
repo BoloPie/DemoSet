@@ -49,7 +49,6 @@ public class TakePhotoActivity extends AppCompatActivity implements TakePhoto.Ta
         ButterKnife.bind(this);
 
 
-
         // 初始化相关的代码
 
         takePhoto = getTakePhoto();
@@ -123,7 +122,7 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         TImage image = result.getImage();
         image.getCompressPath();//压缩图片路径
 
-        Glide.with(this).load(image.getCompressPath()).into(imageView);
+        Glide.with(this).load(new File(image.getCompressPath())).into(imageView);
     }
 
     @Override

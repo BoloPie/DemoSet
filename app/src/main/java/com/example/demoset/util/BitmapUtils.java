@@ -88,6 +88,16 @@ public class BitmapUtils {
         return imageFilePath;
     }
 
+    /**创建uri,用于保存拍照后的照片
+     * @return
+     */
+    public static Uri createUri(){
+        File file=new File(Environment.getExternalStorageDirectory(), "/temp/"+System.currentTimeMillis() + ".jpg");
+        if (!file.getParentFile().exists())file.getParentFile().mkdirs();
+        Uri imageUri = Uri.fromFile(file);
+        return imageUri;
+    }
+
 
     /**
      * 制作图片的路径地址
