@@ -35,7 +35,7 @@ public class TakePhotoActivity extends AppCompatActivity implements TakePhoto.Ta
 
     private TakePhoto takePhoto;
     private InvokeParam invokeParam;
-    private Uri outPutUri;//图片保存路径
+//    private Uri outPutUri;//图片保存路径
     private CompressConfig compressConfig;
     private CropOptions cropOptions;
 
@@ -52,7 +52,7 @@ public class TakePhotoActivity extends AppCompatActivity implements TakePhoto.Ta
         // 初始化相关的代码
 
         takePhoto = getTakePhoto();
-        outPutUri = BitmapUtils.createImagePathUri(this);//图片存储路径
+//        Uri  outPutUri = BitmapUtils.createImagePathUri(this);//图片存储路径
         compressConfig = new CompressConfig.Builder().setMaxSize(1800 * 1800).setMaxPixel(800).create();
         cropOptions = new CropOptions.Builder().setAspectX(1).setAspectY(1).setWithOwnCrop(true).create();
         takePhoto.onCreate(savedInstanceState);
@@ -74,7 +74,11 @@ public class TakePhotoActivity extends AppCompatActivity implements TakePhoto.Ta
          * @param outPutUri 图片裁剪之后保存的路径
          * @param options 裁剪配置
          */
-        takePhoto.onPickFromGalleryWithCrop(outPutUri,cropOptions);
+//        Uri  outPutUri = BitmapUtils.createImagePathUri(this);//图片存储路径
+        File file=new File(Environment.getExternalStorageDirectory(), "/temp/"+System.currentTimeMillis() + ".jpg");
+        if (!file.getParentFile().exists())file.getParentFile().mkdirs();
+        Uri imageUri = Uri.fromFile(file);
+        takePhoto.onPickFromGalleryWithCrop(imageUri,cropOptions);
     }
 
     @OnClick(R.id.activity_take_photo_take_btn)

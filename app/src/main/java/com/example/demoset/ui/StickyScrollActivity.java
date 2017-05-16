@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewTreeObserver;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.demoset.R;
@@ -22,6 +23,9 @@ public class StickyScrollActivity extends AppCompatActivity implements Observabl
     @Bind(R.id.sticky)
     TextView stickyView;
 
+
+    @Bind(R.id.activity_sticky_scroll_container)
+    LinearLayout container;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +46,10 @@ public class StickyScrollActivity extends AppCompatActivity implements Observabl
             @Override
             public void onClick(View view) {
                 topView.setVisibility(View.GONE);
+//                stickyView.setTranslationY(0);
+//                container.setTranslationY(-(placeholderView.getTop()));
+//                observableScrollView.scrollTo(0,placeholderView.getTop());
+//                observableScrollView.setTranslationY(-(topView.getBottom()));
 
             }
         });

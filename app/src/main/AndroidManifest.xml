@@ -87,8 +87,10 @@
         <activity
             android:name=".ui.LoginActivity"
             android:label="@string/title_activity_login" />
-        <activity android:name=".ui.TakePhotoActivity"
-            android:label="选择照片"/>
+        <activity
+            android:name=".ui.TakePhotoActivity"
+            android:label="选择照片" />
+        <activity android:name=".ui.CallPermissionsActivity"></activity>
     </application>
 
 </manifest>
