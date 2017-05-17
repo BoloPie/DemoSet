@@ -32,6 +32,7 @@ import com.example.demoset.ui.ExpandableListViewActivity;
 import com.example.demoset.ui.FragmentViewPagerActivity;
 import com.example.demoset.ui.HoverActivity;
 import com.example.demoset.ui.LoginActivity;
+import com.example.demoset.ui.PhotoViewerActivity;
 import com.example.demoset.ui.ProvinceActivity;
 import com.example.demoset.ui.QRActivity;
 import com.example.demoset.ui.SpannableStringActivity;
@@ -108,6 +109,7 @@ public class MainActivity extends AppCompatActivity {
         list.add("QRActivity");
         list.add("LoginActivity");
         list.add("TakePhotoActivity");
+        list.add("PhotoViewerActivity");
 
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -208,6 +210,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 29:
                         intent.setClass(MainActivity.this, TakePhotoActivity.class);
+                        break;
+                    case 30:
+                        intent.setClass(MainActivity.this, PhotoViewerActivity.class);
                         break;
 
 
