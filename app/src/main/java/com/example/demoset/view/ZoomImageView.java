@@ -558,4 +558,8 @@ public class ZoomImageView extends View implements Observer {
             }
         }
     }
+
+
+
+
 }

@@ -33,6 +33,7 @@ import com.example.demoset.ui.FragmentViewPagerActivity;
 import com.example.demoset.ui.HoverActivity;
 import com.example.demoset.ui.LoginActivity;
 import com.example.demoset.ui.PhotoViewerActivity;
+import com.example.demoset.ui.PhotoViewerSaveActivity;
 import com.example.demoset.ui.ProvinceActivity;
 import com.example.demoset.ui.QRActivity;
 import com.example.demoset.ui.SpannableStringActivity;
@@ -110,6 +111,8 @@ public class MainActivity extends AppCompatActivity {
         list.add("LoginActivity");
         list.add("TakePhotoActivity");
         list.add("PhotoViewerActivity");
+        list.add("PhotoViewerSaveActivity");
+
 
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -213,6 +216,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 30:
                         intent.setClass(MainActivity.this, PhotoViewerActivity.class);
+                        break;
+                    case 31:
+                        intent.setClass(MainActivity.this, PhotoViewerSaveActivity.class);
                         break;
 
 

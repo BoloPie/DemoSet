@@ -4,6 +4,7 @@
     android:id="@+id/activity_photo_viewer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:focusable="true"
     android:orientation="vertical"
     tools:context="com.example.demoset.ui.PhotoViewerActivity">
 
@@ -11,10 +12,10 @@
         android:id="@+id/activity_photo_viewer_save_tv"
         android:layout_width="match_parent"
         android:layout_height="@dimen/menu_item_height"
-        android:text="保存"
-        android:textColor="@color/white"
+        android:background="@drawable/shape_corner_solid_teal"
         android:gravity="center"
-        android:background="@drawable/shape_corner_solid_teal"/>
+        android:text="保存"
+        android:textColor="@color/white" />
 
     <com.example.demoset.view.ZoomImageView
         android:id="@+id/activity_photo_viewer_iv"

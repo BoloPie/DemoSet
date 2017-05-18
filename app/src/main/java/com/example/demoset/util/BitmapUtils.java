@@ -164,7 +164,7 @@ public class BitmapUtils {
 //        }
         // 最后通知图库更新
         context.sendBroadcast(new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE, Uri.parse("file://" +  file.getAbsolutePath())));
-        Toast.makeText(context, "保存图片成功", Toast.LENGTH_SHORT).show();
+        Toast.makeText(context, "图片已存至"+file.getAbsolutePath()+"文件夹", Toast.LENGTH_SHORT).show();
     }
 
 }
