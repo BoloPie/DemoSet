@@ -6,6 +6,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <!-- <item name="android:windowContentTransitions">true</item>-->
     </style>
 
     <style name="AppTheme.NoActionBar">
@@ -34,7 +35,7 @@
         <item name="android:gravity">center</item>
         <item name="android:textAppearance">?android:textAppearanceLarge</item>
         <item name="android:textAllCaps">true</item>
-       <!-- <item name="android:fontFamily">sans-serif-light</item>-->
+        <!-- <item name="android:fontFamily">sans-serif-light</item>-->
         <item name="android:clickable">true</item>
         <item name="android:focusable">true</item>
     </style>
@@ -45,6 +46,19 @@
 
     <style name="Item.Bottom.Alt">
         <item name="android:background">@color/color_red_100</item>
+    </style>
+
+    <!-- 五星评价-->
+    <style name="RatingBarBig" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/star_rating_bar_big</item>
+    </style>
+
+    <style name="RatingBarSmall" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/star_rating_bar_small</item>
+        <item name="android:minHeight">32dip</item>
+        <item name="android:maxHeight">32dip</item>
+        <!-- 是否不支持用户交互，只应作为指标。 -->
+        <item name="android:isIndicator">true</item>
     </style>
 
 

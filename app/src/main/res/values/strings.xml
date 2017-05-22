@@ -39,4 +39,6 @@
     <string name="error_field_required">This field is required</string>
 
 
+    <string name="photo_view">photoview</string>
+
 </resources>

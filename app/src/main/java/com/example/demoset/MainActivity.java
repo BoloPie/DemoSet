@@ -32,14 +32,17 @@ import com.example.demoset.ui.ExpandableListViewActivity;
 import com.example.demoset.ui.FragmentViewPagerActivity;
 import com.example.demoset.ui.HoverActivity;
 import com.example.demoset.ui.LoginActivity;
+import com.example.demoset.ui.MultiXmlListviewActivity;
 import com.example.demoset.ui.PhotoViewerActivity;
 import com.example.demoset.ui.PhotoViewerSaveActivity;
 import com.example.demoset.ui.ProvinceActivity;
 import com.example.demoset.ui.QRActivity;
+import com.example.demoset.ui.RatingBarActivity;
 import com.example.demoset.ui.SpannableStringActivity;
 import com.example.demoset.ui.StickyScrollActivity;
 import com.example.demoset.ui.SwipeDelMenuLayoutActivity;
 import com.example.demoset.ui.TakePhotoActivity;
+import com.example.demoset.ui.TranslateImageActivity;
 import com.squareup.leakcanary.RefWatcher;
 
 import java.util.ArrayList;
@@ -112,7 +115,9 @@ public class MainActivity extends AppCompatActivity {
         list.add("TakePhotoActivity");
         list.add("PhotoViewerActivity");
         list.add("PhotoViewerSaveActivity");
-
+        list.add("TranslateImageActivity");
+        list.add("RatingBarActivity");
+        list.add("MultiXmlListviewActivity");
 
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -219,6 +224,15 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 31:
                         intent.setClass(MainActivity.this, PhotoViewerSaveActivity.class);
+                        break;
+                    case 32:
+                        intent.setClass(MainActivity.this, TranslateImageActivity.class);
+                        break;
+                    case 33:
+                        intent.setClass(MainActivity.this, RatingBarActivity.class);
+                        break;
+                    case 34:
+                        intent.setClass(MainActivity.this, MultiXmlListviewActivity.class);
                         break;
 
 

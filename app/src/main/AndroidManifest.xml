@@ -91,7 +91,10 @@
             android:label="选择照片" />
         <activity android:name=".ui.CallPermissionsActivity" />
         <activity android:name=".ui.PhotoViewerActivity" />
-        <activity android:name=".ui.PhotoViewerSaveActivity"></activity>
+        <activity android:name=".ui.PhotoViewerSaveActivity" />
+        <activity android:name=".ui.TranslateImageActivity" />
+        <activity android:name=".ui.RatingBarActivity" />
+        <activity android:name=".ui.MultiXmlListviewActivity"></activity>
     </application>
 
 </manifest>
