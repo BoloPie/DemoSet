@@ -1,4 +1,4 @@
-package com.example.demoset.ui;
+package com.example.demoset.ui.login;
 
 import android.content.Context;
 import android.content.SharedPreferences;

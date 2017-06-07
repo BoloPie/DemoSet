@@ -33,7 +33,6 @@ import com.example.demoset.ui.FloatingActivity;
 import com.example.demoset.ui.FragmentViewPagerActivity;
 import com.example.demoset.ui.HoverActivity;
 import com.example.demoset.ui.LoadingDialogActivity;
-import com.example.demoset.ui.LoginActivity;
 import com.example.demoset.ui.MultiXmlListviewActivity;
 import com.example.demoset.ui.PhotoViewerActivity;
 import com.example.demoset.ui.PhotoViewerSaveActivity;
@@ -47,6 +46,7 @@ import com.example.demoset.ui.SwipeDelMenuLayoutActivity;
 import com.example.demoset.ui.TakePhotoActivity;
 import com.example.demoset.ui.TranslateImageActivity;
 import com.example.demoset.ui.http.RetrofitRxjavaActivity;
+import com.example.demoset.ui.login.LoginActivity;
 
 import java.util.ArrayList;
 
