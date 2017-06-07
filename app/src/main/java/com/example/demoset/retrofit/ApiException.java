@@ -1,7 +1,7 @@
 package com.example.demoset.retrofit;
 
 /**
- * Created by liukun on 16/3/10.
+ * 你可以再定义自己的业务相关的错误
  */
 public class ApiException extends RuntimeException {
 

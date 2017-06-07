@@ -1,6 +1,7 @@
 package com.example.demoset.retrofit;
 
 import android.content.Context;
+import android.widget.Toast;
 
 import rx.Subscriber;
 
@@ -19,7 +20,7 @@ public class ProgressSubscriber<T> extends Subscriber<T> implements ProgressCanc
     public ProgressSubscriber(SubscriberOnNextListener mSubscriberOnNextListener, Context context) {
         this.subscriberOnNextListener = mSubscriberOnNextListener;
         this.context = context;
-        progressDialogHandler = new ProgressDialogHandler(this,true,context);
+        progressDialogHandler = new ProgressDialogHandler(this,false,context);
     }
 
     private void showProgressDialog(){
@@ -46,12 +47,14 @@ public class ProgressSubscriber<T> extends Subscriber<T> implements ProgressCanc
     public void onCompleted() {
         //停止ProgressDialog
         dismissProgressDialog();
+        Toast.makeText(context, "获取成功", Toast.LENGTH_SHORT).show();
     }
 
     @Override
     public void onError(Throwable e) {
         //我们集中处理错误，同时也停止ProgressDialog
         dismissProgressDialog();
+        Toast.makeText(context, "error:" + e.getMessage(), Toast.LENGTH_SHORT).show();
     }
 
     @Override

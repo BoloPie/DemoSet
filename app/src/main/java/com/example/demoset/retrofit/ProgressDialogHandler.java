@@ -7,6 +7,9 @@ import android.content.DialogInterface;
 import android.os.Handler;
 import android.os.Message;
 
+import com.example.demoset.widget.LoadingDialog;
+import com.example.demoset.widget.LoadingProgressDialog;
+
 /**
  * 用了一个Handler来封装了ProgressDialog。
  * Handler接收两个消息来控制显示Dialog还是关闭Dialog。
@@ -17,7 +20,7 @@ public class ProgressDialogHandler extends Handler {
     public static final int SHOW_PROGRESS_DIALOG = 1;
     public static final int DISMISS_PROGRESS_DIALOG = 2;
 
-    private ProgressDialog pd;
+    private LoadingProgressDialog pd;//ProgressDialog
 
     private Context context;
     private boolean cancelable;
@@ -31,7 +34,7 @@ public class ProgressDialogHandler extends Handler {
 
     private void initProgressDialog(){
         if (pd == null){
-            pd = new ProgressDialog(context);
+            pd = new LoadingProgressDialog(context);
             pd.setCancelable(cancelable);
 
             if (cancelable){
