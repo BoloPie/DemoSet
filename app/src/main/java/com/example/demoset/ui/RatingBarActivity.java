@@ -21,7 +21,7 @@ public class RatingBarActivity extends AppCompatActivity {
         setContentView(R.layout.activity_rating_bar);
         ButterKnife.bind(this);
 
-        ratingBar.setRating(2.5f);
+        ratingBar.setRating(2.2f);
 
 
     }

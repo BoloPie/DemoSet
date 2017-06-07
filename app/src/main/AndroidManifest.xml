@@ -91,10 +91,22 @@
             android:label="选择照片" />
         <activity android:name=".ui.CallPermissionsActivity" />
         <activity android:name=".ui.PhotoViewerActivity" />
-        <activity android:name=".ui.PhotoViewerSaveActivity" />
-        <activity android:name=".ui.TranslateImageActivity" />
-        <activity android:name=".ui.RatingBarActivity" />
-        <activity android:name=".ui.MultiXmlListviewActivity"></activity>
+        <activity
+            android:name=".ui.PhotoViewerSaveActivity"
+            android:label="查看大图" />
+        <activity
+            android:name=".ui.TranslateImageActivity"
+            android:label="查看大图滑动（api21以上）" />
+        <activity
+            android:name=".ui.RatingBarActivity"
+            android:label="多星评价" />
+        <activity
+            android:name=".ui.MultiXmlListviewActivity"
+            android:label="多布局listview" />
+        <activity android:name=".ui.FloatingActivity" />
+        <activity android:name=".ui.LoadingDialogActivity" />
+        <activity android:name=".ui.http.RetrofitActivity" />
+        <activity android:name=".ui.http.RetrofitRxjavaActivity"></activity>
     </application>
 
 </manifest>

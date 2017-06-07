@@ -16,6 +16,7 @@ public class BaseApplication extends Application {
     private RefWatcher refWatcher;
     @Override public void onCreate() {
         super.onCreate();
+        instance = this;
         //检测对象：所有的activity
 //        refWatcher = LeakCanary.install(this);//这样就可以检测所有Activity的内存泄露了。
         refWatcher = installLeakCanary();
@@ -33,5 +34,30 @@ public class BaseApplication extends Application {
 //        LeakCanary.install(this,)
 //        return LeakCanary.install(this, LeakUploadService.class);
     }
+
+    /**
+     * 本类实体对象
+     */
+    private static BaseApplication instance;
+    /**
+     * 获取本类实例
+     *
+     * @return 实例对象
+     */
+    public static final BaseApplication getInstance() {
+        return instance;
+    }
+    /**
+     * 获取应用程序上下文
+     *
+     * @return 应用程序上下文
+     */
+    public static final Context getContext() {
+        final BaseApplication instance = getInstance();
+        if (instance == null)
+            throw new NullPointerException("如果使用了shyky_library中的类，必须自定义Application继承com.shyky.library.BaseApplication，并在清单文件中配置你的Application类");
+        return instance.getApplicationContext();
+    }
+
 
 }

@@ -1,4 +1,4 @@
-package com.example.demoset.util;
+package com.example.demoset.tool;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

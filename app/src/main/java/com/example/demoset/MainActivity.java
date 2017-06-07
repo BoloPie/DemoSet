@@ -29,8 +29,10 @@ import com.example.demoset.md.ToolbarSearchActivity;
 import com.example.demoset.ui.ActionBarActivity;
 import com.example.demoset.ui.DynamicFragmentActivity;
 import com.example.demoset.ui.ExpandableListViewActivity;
+import com.example.demoset.ui.FloatingActivity;
 import com.example.demoset.ui.FragmentViewPagerActivity;
 import com.example.demoset.ui.HoverActivity;
+import com.example.demoset.ui.LoadingDialogActivity;
 import com.example.demoset.ui.LoginActivity;
 import com.example.demoset.ui.MultiXmlListviewActivity;
 import com.example.demoset.ui.PhotoViewerActivity;
@@ -38,12 +40,13 @@ import com.example.demoset.ui.PhotoViewerSaveActivity;
 import com.example.demoset.ui.ProvinceActivity;
 import com.example.demoset.ui.QRActivity;
 import com.example.demoset.ui.RatingBarActivity;
+import com.example.demoset.ui.http.RetrofitActivity;
 import com.example.demoset.ui.SpannableStringActivity;
 import com.example.demoset.ui.StickyScrollActivity;
 import com.example.demoset.ui.SwipeDelMenuLayoutActivity;
 import com.example.demoset.ui.TakePhotoActivity;
 import com.example.demoset.ui.TranslateImageActivity;
-import com.squareup.leakcanary.RefWatcher;
+import com.example.demoset.ui.http.RetrofitRxjavaActivity;
 
 import java.util.ArrayList;
 
@@ -118,6 +121,11 @@ public class MainActivity extends AppCompatActivity {
         list.add("TranslateImageActivity");
         list.add("RatingBarActivity");
         list.add("MultiXmlListviewActivity");
+        list.add("FloatingActivity");
+        list.add("LoadingDialogActivity");
+        list.add("RetrofitActivity");
+        list.add("RetrofitRxjavaActivity");
+
 
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -234,8 +242,18 @@ public class MainActivity extends AppCompatActivity {
                     case 34:
                         intent.setClass(MainActivity.this, MultiXmlListviewActivity.class);
                         break;
-
-
+                    case 35:
+                        intent.setClass(MainActivity.this, FloatingActivity.class);
+                        break;
+                    case 36:
+                        intent.setClass(MainActivity.this, LoadingDialogActivity.class);
+                        break;
+                    case 37:
+                        intent.setClass(MainActivity.this, RetrofitActivity.class);
+                        break;
+                    case 38:
+                        intent.setClass(MainActivity.this, RetrofitRxjavaActivity.class);
+                        break;
 
 
                 }
