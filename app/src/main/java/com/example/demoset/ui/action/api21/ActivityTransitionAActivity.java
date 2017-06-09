@@ -1,4 +1,4 @@
-package com.example.demoset.ui.action;
+package com.example.demoset.ui.action.api21;
 
 import android.app.ActivityOptions;
 import android.content.Intent;
@@ -17,7 +17,8 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-/**
+/**Activity的过度动画——ActivityOptions。并且提供了兼容包——ActivityOptionsCompat
+ *
  * 转场动画A
  */
 public class ActivityTransitionAActivity extends AppCompatActivity {

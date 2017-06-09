@@ -111,8 +111,8 @@
         <activity android:name=".ui.action.DownLoadingViewActivity" />
         <activity android:name=".ui.action.ScenesTransitionsActivity" />
         <activity android:name=".ui.action.ActionMainActivity" />
-        <activity android:name=".ui.action.ActivityTransitionAActivity" />
-        <activity android:name=".ui.action.BActivity"></activity>
+        <activity android:name=".ui.action.api21.ActivityTransitionAActivity" />
+        <activity android:name=".ui.action.api21.BActivity"></activity>
     </application>
 
 </manifest>

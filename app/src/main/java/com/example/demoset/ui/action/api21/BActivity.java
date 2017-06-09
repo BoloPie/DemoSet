@@ -1,7 +1,8 @@
-package com.example.demoset.ui.action;
+package com.example.demoset.ui.action.api21;
 
 import android.os.Build;
 import android.support.annotation.RequiresApi;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.transition.Explode;
@@ -50,4 +51,11 @@ public class BActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_b);
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        ActivityCompat.finishAfterTransition(this);
+    }
+
 }
