@@ -110,7 +110,9 @@
         <activity android:name=".ui.action.ActionMenuActivity" />
         <activity android:name=".ui.action.DownLoadingViewActivity" />
         <activity android:name=".ui.action.ScenesTransitionsActivity" />
-        <activity android:name=".ui.action.ActionMainActivity"></activity>
+        <activity android:name=".ui.action.ActionMainActivity" />
+        <activity android:name=".ui.action.ActivityTransitionAActivity" />
+        <activity android:name=".ui.action.BActivity"></activity>
     </application>
 
 </manifest>
