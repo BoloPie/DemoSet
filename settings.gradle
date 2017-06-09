@@ -1,1 +1,1 @@
-include ':app', ':shyky_library'
+include ':app'

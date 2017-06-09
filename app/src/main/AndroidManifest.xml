@@ -106,7 +106,11 @@
         <activity android:name=".ui.FloatingActivity" />
         <activity android:name=".ui.LoadingDialogActivity" />
         <activity android:name=".ui.http.RetrofitActivity" />
-        <activity android:name=".ui.http.RetrofitRxjavaActivity"></activity>
+        <activity android:name=".ui.http.RetrofitRxjavaActivity" />
+        <activity android:name=".ui.action.ActionMenuActivity" />
+        <activity android:name=".ui.action.DownLoadingViewActivity" />
+        <activity android:name=".ui.action.ScenesTransitionsActivity" />
+        <activity android:name=".ui.action.ActionMainActivity"></activity>
     </application>
 
 </manifest>

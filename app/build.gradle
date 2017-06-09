@@ -5,7 +5,7 @@ android {
     buildToolsVersion "25.0.1"
     defaultConfig {
         applicationId "com.example.demoset"
-        minSdkVersion 14
+        minSdkVersion 15
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
@@ -64,8 +64,15 @@ dependencies {
     /*Rxjava*/
 //    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
 //    compile 'io.reactivex.rxjava2:rxjava:2.1.0'
-
     //转换器，请求结果转换成Model
     compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+
+    //粘性果冻菜单
+    compile 'com.github.lilei644:SpringActionMenu:1.0.0'
+    //不错的downloading动效
+    compile 'com.github.Ajian-studio:GADownloading:v1.0.2'
+    //Transitions-Everywhere 向后移植到 Android 4.O ,并且兼容 Android 2.2 +. 搞定Android 5.0 的 Transitions API不兼容低版本
+    compile "com.andkulikov:transitionseverywhere:1.6.5"
+
 
 }

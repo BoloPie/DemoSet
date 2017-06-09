@@ -39,6 +39,9 @@ import com.example.demoset.ui.PhotoViewerSaveActivity;
 import com.example.demoset.ui.ProvinceActivity;
 import com.example.demoset.ui.QRActivity;
 import com.example.demoset.ui.RatingBarActivity;
+import com.example.demoset.ui.action.ActionMainActivity;
+import com.example.demoset.ui.action.ActionMenuActivity;
+import com.example.demoset.ui.action.DownLoadingViewActivity;
 import com.example.demoset.ui.http.RetrofitActivity;
 import com.example.demoset.ui.SpannableStringActivity;
 import com.example.demoset.ui.StickyScrollActivity;
@@ -125,6 +128,7 @@ public class MainActivity extends AppCompatActivity {
         list.add("LoadingDialogActivity");
         list.add("RetrofitActivity");
         list.add("RetrofitRxjavaActivity");
+        list.add("ActionMainActivity");
 
 
 
@@ -198,7 +202,8 @@ public class MainActivity extends AppCompatActivity {
                         intent.setClass(MainActivity.this, ItemTouchHelperActivity.class);
                         break;
                     case 20:
-                        intent.setClass(MainActivity.this, DeleteItemActivity.class);
+
+                         intent.setClass(MainActivity.this, DeleteItemActivity.class);
                         break;
                     case 21:
                         intent.setClass(MainActivity.this, SwipeDelMenuLayoutActivity.class);
@@ -253,6 +258,10 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 38:
                         intent.setClass(MainActivity.this, RetrofitRxjavaActivity.class);
+                        break;
+
+                    case 39:
+                        intent.setClass(MainActivity.this, ActionMainActivity.class);
                         break;
 
 
