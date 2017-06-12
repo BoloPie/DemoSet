@@ -34,6 +34,7 @@ import com.example.demoset.ui.FragmentViewPagerActivity;
 import com.example.demoset.ui.HoverActivity;
 import com.example.demoset.ui.LoadingDialogActivity;
 import com.example.demoset.ui.MultiXmlListviewActivity;
+import com.example.demoset.ui.support.PaletteActivity;
 import com.example.demoset.ui.PhotoViewerActivity;
 import com.example.demoset.ui.PhotoViewerSaveActivity;
 import com.example.demoset.ui.ProvinceActivity;
@@ -129,7 +130,7 @@ public class MainActivity extends AppCompatActivity {
         list.add("RetrofitActivity");
         list.add("RetrofitRxjavaActivity");
         list.add("ActionMainActivity");
-
+        list.add("PaletteActivity");
 
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -262,6 +263,9 @@ public class MainActivity extends AppCompatActivity {
 
                     case 39:
                         intent.setClass(MainActivity.this, ActionMainActivity.class);
+                        break;
+                    case 40:
+                        intent.setClass(MainActivity.this, PaletteActivity.class);
                         break;
 
 

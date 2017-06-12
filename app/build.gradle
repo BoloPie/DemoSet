@@ -72,7 +72,11 @@ dependencies {
     //不错的downloading动效
     compile 'com.github.Ajian-studio:GADownloading:v1.0.2'
     //Transitions-Everywhere 向后移植到 Android 4.O ,并且兼容 Android 2.2 +. 搞定Android 5.0 的 Transitions API不兼容低版本
-    compile "com.andkulikov:transitionseverywhere:1.6.5"
+    compile "com.andkulikov:transitionseverywhere:1.6.5"//仅仅是页面内交互
+    compile 'com.android.support:palette-v7:25.0.1'// Palette 可以从一张图片中提取颜色
+//    complie "com.android.support:customtabs:25.0.1"
+    //Chrome 浏览器现在已经成为 Android 原生系统的默认浏览器了。并且让用户感觉这个自定义 Tab 就是您应用的一部分。
 
+//    complie 'com.android.support:gridlayout-v7:25.2.0'
 
 }

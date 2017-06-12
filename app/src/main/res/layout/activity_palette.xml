@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_palette"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.demoset.ui.PaletteActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@mipmap/ic_tree_home" />
+
+    <TextView
+        android:id="@+id/activity_palette_one_tv"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/tip_type_not_image" />
+
+    <TextView
+        android:id="@+id/activity_palette_t_tv"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/tip_type_not_image" />
+
+    <TextView
+        android:id="@+id/activity_palette_th_tv"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/tip_type_not_image" />
+
+    <TextView
+        android:id="@+id/activity_palette_f_tv"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/tip_type_not_image" />
+</LinearLayout>
