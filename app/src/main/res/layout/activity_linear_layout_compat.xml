@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.demoset.md.LinearLayoutCompatActivity">
+    tools:context="com.example.demoset.ui.md.LinearLayoutCompatActivity">
 
     <android.support.v7.widget.LinearLayoutCompat
         android:layout_width="match_parent"

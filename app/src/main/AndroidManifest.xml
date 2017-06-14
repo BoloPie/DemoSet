@@ -25,77 +25,77 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".md.TabLayoutActivity" />
-        <activity android:name=".md.FloatingActionButtonActivity" />
-        <activity android:name=".md.TextInputLayoutActivity" />
-        <activity android:name=".md.SampleListPopupWindowActivity" />
+        <activity android:name=".ui.md.TabLayoutActivity" />
+        <activity android:name=".ui.md.FloatingActionButtonActivity" />
+        <activity android:name=".ui.md.TextInputLayoutActivity" />
+        <activity android:name=".ui.md.SampleListPopupWindowActivity" />
         <activity
-            android:name=".md.NavigationDrawerActivity"
+            android:name=".ui.md.NavigationDrawerActivity"
             android:label="@string/title_activity_navigation_drawer"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".md.AppBarLayoutActivity"
+            android:name=".ui.md.AppBarLayoutActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".md.ListPopupWindowActivity" />
-        <activity android:name=".md.RecyclerViewLinearActivity" />
+        <activity android:name=".ui.md.ListPopupWindowActivity" />
+        <activity android:name=".ui.md.RecyclerViewLinearActivity" />
         <activity
-            android:name=".md.ToolBarActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".md.ToolbarSearchActivity"
+            android:name=".ui.md.ToolBarActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".md.CollapsingToolbarLayoutActivity"
+            android:name=".ui.md.ToolbarSearchActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.md.CollapsingToolbarLayoutActivity"
             android:label="悬浮" />
-        <activity android:name=".md.SwipyRefreshLayoutActivity" />
-        <activity android:name=".md.CardViewActivity" />
+        <activity android:name=".ui.md.SwipyRefreshLayoutActivity" />
+        <activity android:name=".ui.md.CardViewActivity" />
         <activity android:name=".ui.SpannableStringActivity" />
         <activity android:name=".ui.TabHostActivity" />
         <activity android:name=".ui.ActionBarActivity" />
-        <activity android:name=".md.LinearLayoutCompatActivity" />
+        <activity android:name=".ui.md.LinearLayoutCompatActivity" />
         <activity android:name=".ui.ExpandableListViewActivity" />
-        <activity android:name=".ui.CapturePictureActivity" />
-        <activity android:name=".ui.FragmentActivity" />
+        <activity android:name=".ui.picture.CapturePictureActivity" />
+        <activity android:name=".ui.fragment.FragmentActivity" />
         <activity android:name=".ui.ProvinceActivity" />
-        <activity android:name=".md.ItemTouchHelperActivity" />
-        <activity android:name=".md.DeleteItemActivity" />
+        <activity android:name=".ui.md.ItemTouchHelperActivity" />
+        <activity android:name=".ui.md.DeleteItemActivity" />
         <activity android:name=".ui.SwipeDelMenuLayoutActivity" />
         <activity android:name=".BaseActivity" />
 
         <service android:name=".service.LeakUploadService" />
 
         <activity
-            android:name=".ui.HoverActivity"
+            android:name=".ui.hover.HoverActivity"
             android:label="悬浮-scrollview" />
         <activity
-            android:name=".ui.FragmentViewPagerActivity"
+            android:name=".ui.fragment.FragmentViewPagerActivity"
             android:label="fragment +viewpager 实现" />
         <activity
-            android:name=".ui.DynamicFragmentActivity"
+            android:name=".ui.fragment.DynamicFragmentActivity"
             android:label="动态嵌入fragment-最常用最基础" />
         <activity
-            android:name=".md.SwipeEmpityViewActivity"
+            android:name=".ui.md.SwipeEmpityViewActivity"
             android:label="listview空数据占位" />
         <activity
-            android:name=".ui.StickyScrollActivity"
+            android:name=".ui.hover.StickyScrollActivity"
             android:label="顶部悬浮_sticky-美团" />
         <activity android:name=".ui.login.RegisterActivity" />
         <activity
-            android:name=".ui.QRActivity"
+            android:name=".ui.qr.QRActivity"
             android:label="二维码生成" />
         <activity
             android:name=".ui.login.LoginActivity"
             android:label="@string/title_activity_login" />
         <activity
-            android:name=".ui.TakePhotoActivity"
+            android:name=".ui.picture.TakePhotoActivity"
             android:label="选择照片" />
         <activity android:name=".ui.CallPermissionsActivity" />
-        <activity android:name=".ui.PhotoViewerActivity" />
+        <activity android:name=".ui.picture.PhotoViewerActivity" />
         <activity
-            android:name=".ui.PhotoViewerSaveActivity"
+            android:name=".ui.picture.PhotoViewerSaveActivity"
             android:label="查看大图" />
         <activity
-            android:name=".ui.TranslateImageActivity"
+            android:name=".ui.picture.TranslateImageActivity"
             android:label="查看大图滑动（api21以上）" />
         <activity
             android:name=".ui.RatingBarActivity"
@@ -103,8 +103,8 @@
         <activity
             android:name=".ui.MultiXmlListviewActivity"
             android:label="多布局listview" />
-        <activity android:name=".ui.FloatingActivity" />
-        <activity android:name=".ui.LoadingDialogActivity" />
+        <activity android:name=".ui.hover.FloatingActivity" />
+        <activity android:name=".ui.dialog.LoadingDialogActivity" />
         <activity android:name=".ui.http.RetrofitActivity" />
         <activity android:name=".ui.http.RetrofitRxjavaActivity" />
         <activity android:name=".ui.action.ActionMenuActivity" />
@@ -114,7 +114,11 @@
         <activity android:name=".ui.action.api21.ActivityTransitionAActivity" />
         <activity android:name=".ui.action.api21.BActivity" />
         <activity android:name=".ui.support.PaletteActivity" />
-        <activity android:name=".ui.support.CustomTabsActivity"></activity>
+        <activity android:name=".ui.support.CustomTabsActivity" />
+        <activity android:name=".ui.MDMainActivity"/>
+        <activity android:name=".ui.FragmentMainActivity"/>
+        <activity android:name=".ui.HoverMainActivity"/>
+        <activity android:name=".ui.PictureMainActivity"/>
     </application>
 
 </manifest>

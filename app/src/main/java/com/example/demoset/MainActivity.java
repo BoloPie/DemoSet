@@ -2,53 +2,28 @@ package com.example.demoset;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.example.demoset.md.AppBarLayoutActivity;
-import com.example.demoset.md.CardViewActivity;
-import com.example.demoset.md.CollapsingToolbarLayoutActivity;
-import com.example.demoset.md.DeleteItemActivity;
-import com.example.demoset.md.FloatingActionButtonActivity;
-import com.example.demoset.md.ItemTouchHelperActivity;
-import com.example.demoset.md.LinearLayoutCompatActivity;
-import com.example.demoset.md.ListPopupWindowActivity;
-import com.example.demoset.md.NavigationDrawerActivity;
-import com.example.demoset.md.RecyclerViewLinearActivity;
-import com.example.demoset.md.SampleListPopupWindowActivity;
-import com.example.demoset.md.SwipeEmpityViewActivity;
-import com.example.demoset.md.SwipyRefreshLayoutActivity;
-import com.example.demoset.md.TabLayoutActivity;
-import com.example.demoset.md.TextInputLayoutActivity;
-import com.example.demoset.md.ToolBarActivity;
-import com.example.demoset.md.ToolbarSearchActivity;
-import com.example.demoset.ui.ActionBarActivity;
-import com.example.demoset.ui.DynamicFragmentActivity;
-import com.example.demoset.ui.ExpandableListViewActivity;
-import com.example.demoset.ui.FloatingActivity;
-import com.example.demoset.ui.FragmentViewPagerActivity;
-import com.example.demoset.ui.HoverActivity;
-import com.example.demoset.ui.LoadingDialogActivity;
-import com.example.demoset.ui.MultiXmlListviewActivity;
+import com.example.demoset.ui.FragmentMainActivity;
+import com.example.demoset.ui.HoverMainActivity;
+import com.example.demoset.ui.MDMainActivity;
+import com.example.demoset.ui.other.ActionBarActivity;
+import com.example.demoset.ui.other.ExpandableListViewActivity;
+import com.example.demoset.ui.other.MultiXmlListviewActivity;
+import com.example.demoset.ui.PictureMainActivity;
+import com.example.demoset.ui.dialog.LoadingDialogActivity;
 import com.example.demoset.ui.support.PaletteActivity;
-import com.example.demoset.ui.PhotoViewerActivity;
-import com.example.demoset.ui.PhotoViewerSaveActivity;
-import com.example.demoset.ui.ProvinceActivity;
-import com.example.demoset.ui.QRActivity;
-import com.example.demoset.ui.RatingBarActivity;
+import com.example.demoset.ui.other.ProvinceActivity;
+import com.example.demoset.ui.qr.QRActivity;
+import com.example.demoset.ui.other.RatingBarActivity;
 import com.example.demoset.ui.action.ActionMainActivity;
-import com.example.demoset.ui.action.ActionMenuActivity;
-import com.example.demoset.ui.action.DownLoadingViewActivity;
 import com.example.demoset.ui.http.RetrofitActivity;
-import com.example.demoset.ui.SpannableStringActivity;
-import com.example.demoset.ui.StickyScrollActivity;
-import com.example.demoset.ui.SwipeDelMenuLayoutActivity;
-import com.example.demoset.ui.TakePhotoActivity;
-import com.example.demoset.ui.TranslateImageActivity;
+import com.example.demoset.ui.other.SpannableStringActivity;
+import com.example.demoset.ui.other.SwipeDelMenuLayoutActivity;
 import com.example.demoset.ui.http.RetrofitRxjavaActivity;
 import com.example.demoset.ui.login.LoginActivity;
 
@@ -90,47 +65,24 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initData() {
-        list.add("TabLayout");
-        list.add("FloatingActionButton");
-        list.add("TextInputLayout");
-        list.add("NavigationDrawer");
-        list.add("AppBarLayout");
-        list.add("SampleListPopupWindow");
-        list.add("ListPopupWindow");
-        list.add("AlertDialog");
-        list.add("RecyclerViewLinear");
-        list.add("ToolBar");
-        list.add("ToolbarSearch");
-        list.add("CollapsingToolbarLayout");
-        list.add("SwipyRefreshLayout");
-        list.add("CardView");
+        list.add("MD相关页面");
+        list.add("FragmentMainActivity");
+        list.add("悬浮实现");
+        list.add("照片相关");
         list.add("SpannableString");
         list.add("ActionBarActivity");
-        list.add("LinearLayoutCompatActivity");
-        list.add("ExpandableListViewActivity");
-        list.add("ProvinceActivity");
-        list.add("ItemTouchHelperActivity");
-        list.add("DeleteItemActivity");
-        list.add("SwipeDelMenuLayoutActivity");
-        list.add("HoverActivity");
-        list.add("DynamicFragmentActivity");
-        list.add("FragmentViewPagerActivity");
-        list.add("SwipeEmpityViewActivity");
-        list.add("StickyScrollActivity");
-        list.add("QRActivity");
-        list.add("LoginActivity");
-        list.add("TakePhotoActivity");
-        list.add("PhotoViewerActivity");
-        list.add("PhotoViewerSaveActivity");
-        list.add("TranslateImageActivity");
-        list.add("RatingBarActivity");
-        list.add("MultiXmlListviewActivity");
-        list.add("FloatingActivity");
+        list.add("二级列表");
+        list.add("省市选择");
+        list.add("listview左滑删除");
+        list.add("二维码");
+        list.add("登陆");
+        list.add("五星评价");
+        list.add("多布局listview");
         list.add("LoadingDialogActivity");
-        list.add("RetrofitActivity");
-        list.add("RetrofitRxjavaActivity");
-        list.add("ActionMainActivity");
-        list.add("PaletteActivity");
+        list.add("Retrofit网络加载");
+        list.add("RetrofitRxjava网络加载");
+        list.add("ActionMain动态效果");
+        list.add("获取图片颜色并使用");
 
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -138,133 +90,63 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 switch (i) {
                     case 0:
-                        intent.setClass(MainActivity.this, TabLayoutActivity.class);
+                        intent.setClass(MainActivity.this, MDMainActivity.class);
                         break;
                     case 1:
-                        intent.setClass(MainActivity.this, FloatingActionButtonActivity.class);
+                        intent.setClass(MainActivity.this, FragmentMainActivity.class);
                         break;
                     case 2:
-                        intent.setClass(MainActivity.this, TextInputLayoutActivity.class);
+                        intent.setClass(MainActivity.this, HoverMainActivity.class);
                         break;
                     case 3:
-                        intent.setClass(MainActivity.this, NavigationDrawerActivity.class);
+                        intent.setClass(MainActivity.this, PictureMainActivity.class);
                         break;
-                    case 4:
-                        intent.setClass(MainActivity.this, AppBarLayoutActivity.class);
-                        break;
-                    case 5:
-                        intent.setClass(MainActivity.this, SampleListPopupWindowActivity.class);
-                        break;
-                    case 6:
-                        intent.setClass(MainActivity.this, ListPopupWindowActivity.class);
-                        break;
-                    case 7:
-                        AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-                        builder.setMessage("让我们一起飞，我带着你，你带着钱，来一场说走就走的旅行")
-                                .setNegativeButton("取消", null)
-                                .setPositiveButton("确定", null)
-                                .setTitle("Material Design Dialog")
-                                .show();
-                        break;
-                    case 8:
-                        intent.setClass(MainActivity.this, RecyclerViewLinearActivity.class);
-                        break;
-                    case 9:
-                        intent.setClass(MainActivity.this, ToolBarActivity.class);
-                        break;
-                    case 10:
-                        intent.setClass(MainActivity.this, ToolbarSearchActivity.class);
-                        break;
-                    case 11:
-                        intent.setClass(MainActivity.this, CollapsingToolbarLayoutActivity.class);
-                        break;
-                    case 12:
-                        intent.setClass(MainActivity.this, SwipyRefreshLayoutActivity.class);
-                        break;
-                    case 13:
-                        intent.setClass(MainActivity.this, CardViewActivity.class);
-                        break;
-                    case 14:
+
+                    case  4:
                         intent.setClass(MainActivity.this, SpannableStringActivity.class);
                         break;
-                    case 15:
+                    case  5:
                         intent.setClass(MainActivity.this, ActionBarActivity.class);
                         break;
-                    case 16:
-                        intent.setClass(MainActivity.this, LinearLayoutCompatActivity.class);
-                        break;
-                    case 17:
+
+                    case 6:
                         intent.setClass(MainActivity.this, ExpandableListViewActivity.class);
                         break;
-                    case 18:
+                    case 7:
                         intent.setClass(MainActivity.this, ProvinceActivity.class);
                         break;
-                    case 19:
-                        intent.setClass(MainActivity.this, ItemTouchHelperActivity.class);
-                        break;
-                    case 20:
-
-                         intent.setClass(MainActivity.this, DeleteItemActivity.class);
-                        break;
-                    case 21:
+                    case 8:
                         intent.setClass(MainActivity.this, SwipeDelMenuLayoutActivity.class);
                         break;
-                    case 22:
-                        intent.setClass(MainActivity.this, HoverActivity.class);
-                        break;
-                    case 23:
-                        intent.setClass(MainActivity.this, DynamicFragmentActivity.class);
-                        break;
-                    case 24:
-                        intent.setClass(MainActivity.this, FragmentViewPagerActivity.class);
-                        break;
-                    case 25:
-                        intent.setClass(MainActivity.this, SwipeEmpityViewActivity.class);
-                        break;
-                    case 26:
-                        intent.setClass(MainActivity.this, StickyScrollActivity.class);
-                        break;
-                    case 27:
+
+                    case 9:
                         intent.setClass(MainActivity.this, QRActivity.class);
                         break;
-                    case 28:
+                    case 10:
                         intent.setClass(MainActivity.this, LoginActivity.class);
                         break;
-                    case 29:
-                        intent.setClass(MainActivity.this, TakePhotoActivity.class);
-                        break;
-                    case 30:
-                        intent.setClass(MainActivity.this, PhotoViewerActivity.class);
-                        break;
-                    case 31:
-                        intent.setClass(MainActivity.this, PhotoViewerSaveActivity.class);
-                        break;
-                    case 32:
-                        intent.setClass(MainActivity.this, TranslateImageActivity.class);
-                        break;
-                    case 33:
+
+                    case 11:
                         intent.setClass(MainActivity.this, RatingBarActivity.class);
                         break;
-                    case 34:
+                    case 12:
                         intent.setClass(MainActivity.this, MultiXmlListviewActivity.class);
                         break;
-                    case 35:
-                        intent.setClass(MainActivity.this, FloatingActivity.class);
-                        break;
-                    case 36:
+
+                    case 13:
                         intent.setClass(MainActivity.this, LoadingDialogActivity.class);
                         break;
-                    case 37:
+                    case 14:
                         intent.setClass(MainActivity.this, RetrofitActivity.class);
                         break;
-                    case 38:
+                    case 15:
                         intent.setClass(MainActivity.this, RetrofitRxjavaActivity.class);
                         break;
 
-                    case 39:
+                    case 16:
                         intent.setClass(MainActivity.this, ActionMainActivity.class);
                         break;
-                    case 40:
+                    case 17:
                         intent.setClass(MainActivity.this, PaletteActivity.class);
                         break;
 
